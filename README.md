@@ -8,7 +8,7 @@ write a [JSON parser][jsonParser] and needed a way to test functionality.
 The tests are (at the moment) extremely minimalistic and do only support a
 minimum of assertion functions. In fact a test is nothing more than a view lines
 of code, encapsulated in a code-block (`{ ... }`), a variable for the current
-test name and an upcountin variable for the result.
+test name and an upcounting variable for the result.
 
 A test skeleton looks like this:
 
@@ -16,7 +16,7 @@ A test skeleton looks like this:
         ; Testcode here
     } success++
 
-This really is nothing special but it does its job.
+This really is nothing special but it does it's job.
 
 
 
