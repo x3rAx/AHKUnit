@@ -3,7 +3,7 @@ AHKUnit
 
 AHKUnit is a (very) simple test semi-framework for
 [AutoHotkey](http://autohotkey.com/)-scripts. It emerged when I was about to
-write a [JSON parser][jsonParser] and needed a way test functionality.
+write a [JSON parser][jsonParser] and needed a way to test functionality.
 
 The tests are (at the moment) extremely minimalistic and do only support a
 minimum of assertion functions. In fact a test is nothing more than a view lines
