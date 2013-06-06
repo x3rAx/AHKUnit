@@ -1,5 +1,5 @@
 assertTrue(actual) {
-    if (actual == true)) {
+    if (actual == true) {
         return true
     } else {
         fail()
@@ -7,7 +7,7 @@ assertTrue(actual) {
 }
 
 assertFalse(actual) {
-    if (actual == false)) {
+    if (actual == false) {
         return true
     } else {
         fail()
@@ -17,7 +17,7 @@ assertFalse(actual) {
 assertSame(expected, actual) {
     ; If expected and actual bothe are objects and point to the same object, it 
     ; will be true, else it will be false.
-    if (actual == expected)) {
+    if (actual == expected) {
         return true
     } else {
         fail()
