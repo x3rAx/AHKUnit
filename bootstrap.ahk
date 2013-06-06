@@ -4,20 +4,6 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
-fail() {
-    global Test
-
-    MsgBox Test failed:`n    %Test%
-    ExitApp
-}
-
-testResults() {
-    global success
-    
-    MsgBox %success% Tests successful! :)
-    ExitApp
-}
-
 ; Counter for successful tests
 success := 0
 
