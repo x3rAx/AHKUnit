@@ -1,7 +1,11 @@
-fail() {
+fail(msg="") {
     global Test
 
-    MsgBox Test failed:`n    %Test%
+    if (msg != "") {
+        msg := "`n`n" . msg
+    }
+
+    MsgBox % "Test failed:`n    " . Test . msg
     ExitApp
 }
 

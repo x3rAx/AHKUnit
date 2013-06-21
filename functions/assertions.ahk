@@ -1,17 +1,11 @@
 assertTrue(actual) {
-    if (actual == true) {
-        return true
-    } else {
-        fail()
-    }
+    ret := assertEquals(true, actual)
+    return ret
 }
 
 assertFalse(actual) {
-    if (actual == false) {
-        return true
-    } else {
-        fail()
-    }
+    ret := assertEquals(false, actual)
+    return ret
 }
 
 assertSame(expected, actual) {
@@ -20,7 +14,7 @@ assertSame(expected, actual) {
     if (actual == expected) {
         return true
     } else {
-        fail()
+        fail("Expected: " . expected . "`nActual: " . actual)
     }
 }
 
@@ -30,8 +24,10 @@ assertEquals(expected, actual) {
     } else if (isObject(expected) && isObject(actual)) {
         if (_serialize(expected) == _serialize(actual)) {
             return true
+        } else {
+            fail("Objects not equals")
         }
     }
 
-    fail()
+    fail("Expected: " . expected . "`nActual: " . actual)
 }
